@@ -14,6 +14,8 @@ return [
             './module',
             './vendor',
         ],
+        // Using __DIR__ to ensure cross-platform compatibility. Some platforms --
+        // e.g., IBM i -- have problems with globs that are not qualified.
         'config_glob_paths' => [
             realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php',
         ],

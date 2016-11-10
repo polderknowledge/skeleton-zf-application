@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f4d9b70838887892430fc5badce61058",
-    "content-hash": "e30b68ae7dc70d59542096d7d0503183",
+    "hash": "8482a0ac87f7e53881bcb11ef369dbba",
+    "content-hash": "eebc0ceae01dafa6224a8674aeda71e4",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -3828,6 +3828,70 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "polderknowledge/build-tools",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/polderknowledge/build-tools.git",
+                "reference": "737b90ac5ed1c13a9de9a590dfe6dcdd24482ed5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/polderknowledge/build-tools/zipball/737b90ac5ed1c13a9de9a590dfe6dcdd24482ed5",
+                "reference": "737b90ac5ed1c13a9de9a590dfe6dcdd24482ed5",
+                "shasum": ""
+            },
+            "require": {
+                "polderknowledge/coding-standards": "~1.0"
+            },
+            "suggest": {
+                "polderknowledge/coding-standards": "~1.0"
+            },
+            "bin": [
+                "bin/init-build.php"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "jaap@youngguns.nl"
+                }
+            ],
+            "description": "A library package containing default build scripts for common usage. Since version 2.0 it doesn't contain the required php-qa tools. Suggested packages can be installed in the projector global when prefered by the user.",
+            "time": "2016-06-01 19:08:30"
+        },
+        {
+            "name": "polderknowledge/coding-standards",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/polderknowledge/coding-standards.git",
+                "reference": "b98ea9ffdaa16d48798ca13ab573f5ad94b383ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/polderknowledge/coding-standards/zipball/b98ea9ffdaa16d48798ca13ab573f5ad94b383ea",
+                "reference": "b98ea9ffdaa16d48798ca13ab573f5ad94b383ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "require-dev": {
+                "phing/phing": "~2.10",
+                "phpunit/phpunit": "~4.5",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2015-10-05 10:07:51"
+        },
         {
             "name": "squizlabs/php_codesniffer",
             "version": "2.7.0",
