@@ -9,12 +9,19 @@
 
 namespace Application;
 
+use Zend\Console\Adapter\AdapterInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Zend\ModuleManager\Feature\ConsoleBannerProviderInterface;
 
-class Module implements ConfigProviderInterface
+class Module implements ConfigProviderInterface, ConsoleBannerProviderInterface
 {
     public function getConfig()
     {
         return include __DIR__ . '/../config/module.config.php';
+    }
+
+    public function getConsoleBanner(AdapterInterface $console)
+    {
+        return '{APP_NAME}';
     }
 }

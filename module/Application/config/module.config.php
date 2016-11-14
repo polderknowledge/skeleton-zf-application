@@ -32,6 +32,15 @@ return [
             ],
         ],
     ],
+    'session_config' => [
+        'name' => 'application',
+        'remember_me_seconds' => 3600,
+    ],
+    'session_storage' => [
+        'type' => 'Zend\\Session\\Storage\\SessionArrayStorage',
+    ],
+    'session_containers' => [
+    ],
     'view_manager' => [
         'doctype' => 'HTML5',
         'not_found_template' => 'error/404',
