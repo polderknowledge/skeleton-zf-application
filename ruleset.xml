@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="TotalInsite">
-    <description>The coding standards of Total Insite</description>
+<ruleset name="{APP_NAME}">
+    <description>The coding standards of {APP_NAME}</description>
 
     <rule ref="vendor/polderknowledge/coding-standards/PolderKnowledge/ruleset.xml">
     </rule>
